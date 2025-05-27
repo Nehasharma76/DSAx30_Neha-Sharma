@@ -1,1 +1,10 @@
+def print_pattern(N):
+    size = 2 * N - 1
+    for i in range(size):
+        for j in range(size):
+            value = N - min(i, j, size - 1 - i, size - 1 - j)
+            print(value, end=' ')
+        print()
 
+N = 3
+print_pattern(N)
