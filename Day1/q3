@@ -1,0 +1,18 @@
+from itertools import permutations 
+
+def primt_combinations(n):
+    digits = list(range (1, n+1))
+    all_perms = list(permutations(digits))
+
+
+    for p in all_perms:
+        print(' '.join(map(str,p)))
+
+    print("Totall number of combinations: ", len(all_perms))
+
+
+n = int(input("Enter any number from 2 to 5 : "))
+if 2<=n<=5:
+    primt_combinations(n)
+else:
+    print("Invalid input ")
